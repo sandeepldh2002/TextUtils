@@ -14,6 +14,7 @@ def index(request):
     # return HttpResponse("hello World")
 
 def analyze(request):
+    # sourcery skip: remove-unnecessary-else, swap-if-else-branches
     #get the text from index.html se
     djtext = request.GET.get('text', 'default')
     djremovepunc = request.GET.get('removepunc', 'off')
